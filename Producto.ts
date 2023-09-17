@@ -3,7 +3,7 @@ export class Producto {
     private precio: number;
     private stock: number;
 
-    constructor(nombre: string, precio: number) {
+    constructor(nombre: string, precio: number, stock: number) {
         this.nombre = nombre;
         this.precio = precio;
         this.stock = 0;

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Producto = void 0;
 var Producto = /** @class */ (function () {
-    function Producto(nombre, precio) {
+    function Producto(nombre, precio, stock) {
         this.nombre = nombre;
         this.precio = precio;
         this.stock = 0;
