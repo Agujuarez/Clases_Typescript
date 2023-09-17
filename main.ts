@@ -18,6 +18,7 @@ const niño2 = new Niño("María", 50000, 5, 1);
 const niño3 = new Niño("Pedro", 50000, 5, 0.4);
 const venta1 = new Venta(1, new Date(2021, 2, 1), persona2, producto1 );
 const venta2 = new Venta(2, new Date(2022, 2, 1), persona2, producto2 );
+const venta3 = new Venta(3, new Date(2023, 2, 1), persona2, organo1 ); // Polimorfismo
 
 
 console.log('esta todo bien');
@@ -37,3 +38,4 @@ console.log(`Nombre: ${niño2.getNombre()}`);
 console.log(`Nombre: ${niño3.getNombre()}`);
 console.log(`Nombre: ${venta1.getProducto().getNombre()}`);
 console.log(`Nombre: ${venta2.getProducto().getNombre()}`);
+console.log(`Nombre: ${venta3.getProducto().getNombre()}`);
