@@ -1,7 +1,8 @@
 import { Persona } from "./persona"; //
+import { Cliente } from "./Cliente"; //
 
 const persona1 = new Persona("Juan", "Pérez", new Date(1990, 0, 15), 175, 70, true);
-const persona2 = new Persona("Fede", "Lopez", new Date(1983, 3, 25), 190, 78, false);
+const persona2 = new Cliente("Fede", "Lopez", new Date(1983, 3, 25), 190, 78, false, 2);
 
 console.log('esta todo bien');
 persona1.setNombre("NuevoNombre");
