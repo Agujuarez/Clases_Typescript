@@ -1,4 +1,4 @@
-import { Persona } from "./persona"; //
+import { Persona } from "./Persona"; //
 import { Cliente } from "./Cliente"; //
 import { Producto } from "./Producto";
 import { Organo } from "./Organo";
@@ -20,6 +20,12 @@ const venta1 = new Venta(1, new Date(2021, 2, 1), persona2, producto1 );
 const venta2 = new Venta(2, new Date(2022, 2, 1), persona2, producto2 );
 const venta3 = new Venta(3, new Date(2023, 2, 1), persona2, organo1 ); // Polimorfismo
 
+persona1.agregarInteres("Programación");
+persona1.agregarInteresAlPrincipio("Matemáticas");
+persona2.agregarInteres("Natación");
+persona2.agregarInteresAlPrincipio("Ciencias Sociales");
+persona2.agregarInteres("Natación");
+persona2.agregarInteresAlPrincipio("Ciencias Sociales");
 
 console.log('esta todo bien');
 persona1.setNombre("NuevoNombre");
@@ -39,3 +45,5 @@ console.log(`Nombre: ${niño3.getNombre()}`);
 console.log(`Nombre: ${venta1.getProducto().getNombre()}`);
 console.log(`Nombre: ${venta2.getProducto().getNombre()}`);
 console.log(`Nombre: ${venta3.getProducto().getNombre()}`);
+console.log(`Intereses de ${persona1.getNombre()}: ${persona1.getIntereses()}`);
+console.log(`Intereses de ${persona2.getNombre()}: ${persona2.getIntereses()}`);
